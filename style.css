@@ -1,14 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 .body {
   background-image: url(https://image.freepik.com/darmowe-wektory/pusty-pokoj-z-bialymi-sciana-z-cegiel-w-studiu_107791-1349.jpg);
   background-attachment: fixed;
   background-size: cover;
   min-width: 800px;
-  margin: 0px; 
-  
+  margin: 0px;
 }
 
-.main {  
-  margin: 60px auto 0px;
+.article__paragraph--specjal{
+  display: flex;
+  align-items: center;
+}
+
+.article__picture{
+  border-radius: 50%;
+  width: 50px;
+}
+
+.main {
+  margin: 70px auto 0px;
   display: flex;
   flex-direction: column;
 }
@@ -20,21 +37,19 @@
   margin: auto auto 10px auto;
 }
 
-.header{
-  background: #fff;
+.header {
+  background: rgb(255, 255, 255, 0.0);
   position: fixed;
   min-height: 60px;
   width: 100%;
   top: 0px;
   margin: 0px;
-  
-  
 }
 
-.menu{
+.menu {
   position: absolute;
   top: 16px;
-  right:16px;
+  right: 16px;
 }
 .section {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -55,32 +70,29 @@ td {
   border: 1px solid black;
 }
 
-.transfer{ 
- padding: 16px;
- display: none;
+.transfer {
+  padding: 16px;
+  display: none;
 }
 
-.transfer--open{
+.transfer--open {
   display: block;
 }
-.transfer__link{
-  color: rgb(59, 58, 58);
+.transfer__link {
+  color: rgb(7, 7, 7);
   display: block;
   margin: 0px 0px 16px 0px;
-  
 }
 
-
-@media(min-width: 768px) {
-  .transfer{
-    background: rgb(212, 212, 212);
+@media (min-width: 768px) {
+  .transfer {
+    background: rgb(212, 212, 212, 0);
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 50px;
-
-
-}
-.menu{
-  display: none;
+  }
+  .menu {
+    display: none;
+  }
 }
